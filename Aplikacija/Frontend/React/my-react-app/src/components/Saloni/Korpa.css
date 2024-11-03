@@ -1,0 +1,62 @@
+.korpa-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.proizvod {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
+  max-width: calc(33.33% - 20px); /* Adjust the width as needed */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.proizvod img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.proizvod p {
+  margin: 5px 0;
+}
+
+.obrisi-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.naruci-button {
+  display: block;
+  width: 80%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.naruci-button:hover {
+  background-color: #0056b3;
+}
+
+.empty-cart-message {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .proizvod {
+    flex: 0 0 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+}

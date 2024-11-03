@@ -1,2 +1,2 @@
 # PetPlanet
-Projekat iz predmeta Softversko Inzenjerstvo
+Web application created using ReactJS + .NET

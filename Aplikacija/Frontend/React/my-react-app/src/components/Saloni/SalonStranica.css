@@ -1,0 +1,24 @@
+
+  
+  .salon-card1 {
+    text-align: center;
+  }
+  
+  .salon-card__image1 {
+    margin-bottom: 1rem;
+  }
+  
+  .salon-card__text1 {
+    margin-top: 1rem;
+    padding-bottom: 0.5rem; /* Spuštanje linije */
+    border-bottom: 2px solid rgb(234, 104, 97); /* Linija */
+    border-radius: 50px; /* Zaobljene ivice */
+
+  }
+
+  .slika{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,369 @@
+/* Stilizacija admin stranice */
+.container-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.admin-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.admin-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.admin-info {
+  flex: 0 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.admin-sidebar {	
+  width: 200px;	
+  min-height: 400px;
+  flex-shrink: 0;	
+  background-color: #a9ebfc;	
+  overflow-y: auto;	
+}
+
+.admin-main {	
+  margin-top:5px;
+  margin-left: 20px;
+  margin-right: 20px;	
+}
+		
+.admin-sidebar ul {	
+  list-style-type: none;	
+  padding: 0;	
+  margin-bottom: 0;	
+}	
+
+.admin-sidebar li {	
+  padding: 10px;	
+  cursor: pointer;	
+  border-bottom: 1px solid #338fa5;	
+}	
+
+.admin-sidebar li:hover {	
+  background-color: #fc6c6c;	
+}	
+
+.admin-sidebar li.selected {	
+  background-color: #338fa5;	
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  min-width: 70vw;
+  max-width: 70vw;
+  margin: 10px;
+  gap: 37px;
+}
+
+.user-card {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+.user-list li {
+  flex: 0 0 calc(33% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-list div {
+  margin-bottom: 10px;
+}
+
+.input-container select {
+  padding: 6px 10px;
+  font-size: 15px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+.close-button {
+  padding: 6px 10px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #e0e0e0;
+}
+
+.close {
+  margin-left: 190px;
+  transition: background-color 0.3s ease;
+}
+
+.close:hover {
+  background-color: #fc6c6c;
+}
+
+.dodatneInformacije-button {
+  padding: 3px 5px;
+  font-size: 15px;
+  border: 0.8px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover,
+.dodatneInformacije-button:hover {
+  background-color: #fc6c6c;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.delete-user-button {
+  padding: 6px 10px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-user-button:hover {
+  background-color: #fc6c6c;
+}
+
+.filter-dropdown{
+  min-width: 70vw; /*82vw ali nije responsive za sve sirine*/
+  max-width: 70vw;
+}
+
+.scrollable-window {
+  max-height: 400px;
+  min-height: 400px;
+  min-width: 70vw; /*82vw ali nije responsive za sve sirine*/
+  max-width: 70vw;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+}
+
+.category-list li {
+  flex-basis: 100%; 
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  align-items: center; 
+  padding: 5px;
+  border-bottom: 1px solid #cccccc;
+  border: none; 
+}
+
+.category-list li:last-child {
+  border-bottom: none;
+}
+
+.category-list li span {
+  background-color: #ccf5ff; 
+  color: #000000; 
+  padding: 5px 10px; 
+  margin-right: 10px;
+  flex-grow: 1;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); 
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.input-container input {
+  margin-right: 10px;
+}
+
+.input-container button {
+  padding: 6px 10px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #fc6c6c;
+}
+
+.admin-info {
+  text-align: center;
+}
+
+.admin-info-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.admin-info-edit {
+  display: flex;
+  align-items: center;
+}
+
+.admin-info-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.image1 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.image2 {
+  width: 350px;
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.admin-info-edit input {
+  margin-right: 10px;
+  padding: 5px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.admin-info-edit button {
+  padding: 6px 10px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.admin-info-edit button:hover {
+  background-color: #fc6c6c;
+}
+
+
+/* Responsivnost */
+@media (max-width: 768px) {
+  .admin-content {
+    flex-direction: column;
+  }
+
+  .admin-info,
+  .admin-sidebar {
+    width: 100%;
+  }
+
+  .admin-sidebar {
+    order: -1;
+    margin-top: 20px;
+  }
+
+  .image2 {
+    max-width: calc(100vw - 40px);
+    max-height: calc(100vh - 40px);
+  }
+
+  .user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-list li {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .scrollable-window {
+    min-width: none;
+  }
+  .admin-sidebar {	
+    min-height: 0px;
+  }
+}
+
